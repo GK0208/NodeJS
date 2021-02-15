@@ -1,8 +1,7 @@
 
 
 const handleRoutes = (req, res) => {
-    const url = req.url;
-    const method = req.method;
+    const { url, method } = req;
 
     if (url == '/') {
         res.write('<html>');
